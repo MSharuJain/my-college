@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Century Gothic",sans-serif;
+    transition: 0.6s;
+
+}
+a{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    
+    color: rgb(250, 7, 7);
+    text-decoration: none;
+}
+
+.navlist{
+    width: 100%;
+    padding: 5px 10vw;
+    position: fixed;
+}
+.navlist ul{
+    display: flex;
+    list-style: none;
+}
+.navlist ul li:first-child{
+    flex:1;
+    }
+    .navlist ul h4{
+        font-family: serif;
+        color:blue;
+    }
+    .navlist ul a{
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    .navlist ul a:hover{
+        color: #f80;
+    }
+
+
+
+    .container{
+        width: 100%;
+        height: 100vh;
+        padding-top: 30vh;
+        background-image: url(img/v);background-repeat: no-repeat;background-size: cover;
+        text-align: center;
+        color: #fff;
+    }
+    .container h1{
+        font-family: serif;
+        margin-bottom: 20px;
+        word-spacing: 5px;
+        color:purple;
+    }
+    .container p{
+        margin-bottom: 30px;
+        letter-spacing: 2px;
+        color:red;
+    }
+    .container button{
+        padding: 10px;
+        background: none;
+        border: 1px solid #f80;
+        
+        
+    }
+    .container button:hover{
+        background: rgb(206, 170, 128);
+    }
+
+marquee{
+    background-color: black;
+    color: red;
+    font-size: x-large;
+}
+
+.content-box img{
+    width: 100%;
+    height: auto;
+}
