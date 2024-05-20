@@ -8,9 +8,9 @@
 }
 a{
     font-family: 'Courier New', Courier, monospace;
-    font-size: larger;
+    font-size: smaller;
     
-    color: rgb(250, 7, 7);
+    color: #fff;
     text-decoration: none;
 }
 
@@ -18,6 +18,8 @@ a{
     width: 100%;
     padding: 5px 10vw;
     position: fixed;
+    background: rgba(18, 18, 39, 0.9);
+    z-index: 10;
 }
 .navlist ul{
     display: flex;
@@ -32,7 +34,7 @@ a{
     }
     .navlist ul a{
         margin-left: 20px;
-        font-size: 12px;
+        font-size: 15px;
     }
     .navlist ul a:hover{
         color: #f80;
@@ -43,8 +45,11 @@ a{
     .container{
         width: 100%;
         height: 100vh;
-        padding-top: 30vh;
-        background-image: url(img/v);background-repeat: no-repeat;background-size: cover;
+        padding-top: 25vh;
+        background-image:linear-gradient(#000000c3, #000000c3), url(img/v);background-repeat: no-repeat;background-size: cover;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         text-align: center;
         color: #fff;
     }
@@ -52,12 +57,12 @@ a{
         font-family: serif;
         margin-bottom: 20px;
         word-spacing: 5px;
-        color:purple;
+        color:pink;
     }
     .container p{
         margin-bottom: 30px;
         letter-spacing: 2px;
-        color:red;
+        color:blue;
     }
     .container button{
         padding: 10px;
@@ -67,7 +72,7 @@ a{
         
     }
     .container button:hover{
-        background: rgb(206, 170, 128);
+        background:#f80;
     }
 
 marquee{
@@ -76,7 +81,83 @@ marquee{
     font-size: x-large;
 }
 
+
+.content-box{
+    width: 80%;
+    margin: auto;
+}
+.content-box>h2{
+    text-align: center;
+    color: #f80;
+    margin: 20px;
+}
+.content-box>h2::before,.content-box>h2::after{
+    content: "------";
+    letter-spacing: -5px;
+    margin: 0 10px;
+}
+.content-box.row{
+    display: flex;
+    justify-content: space-between;
+}
+.content-box.column{
+    width: 32%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
 .content-box img{
     width: 100%;
     height: auto;
 }
+/*.content-box .column a:last-child{
+position: absolute;
+    width: 40%;
+    height: 40%;
+    top: 40%;
+    left: 0;
+    bottom: 0;
+    background: #ff8800c3;
+    text-align: center;
+    line-height: 25vw;
+    font-size: 3vw;
+}
+.content-box .column:hover a:last-child{
+    height: 40%;
+    top: 0;
+    
+}*/
+footer{
+    margin-top: 40px;
+    background: #f80;
+
+}
+footer ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+footer ul li{
+    margin: 10px;
+}
+
+.content-box .column{
+    color: red;
+    
+}
+@media(max-width:600px){
+    .content-box.row{
+        flex-direction: column;
+
+    }
+    .content-box.column{
+        width: 40%;
+        margin: 0 auto;
+    }
+    .content-box .column a:last-child{
+        line-height: 80vw;
+        font-size: 6vw;
+    }
+}
+
+
